@@ -21,4 +21,10 @@ router.post('/', (req, res) => {
         .catch(err => res.status(404).json(err))
 })
 
+router.delete('/:question_id', (req, res) => {
+    Question.findOneAndDelete({_id: req.params.question_id})
+        .then(question => res.json({_id: question._id}))
+        .catch(err => res.status(404).json(err))
+})
+
 module.exports = router
