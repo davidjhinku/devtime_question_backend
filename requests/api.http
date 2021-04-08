@@ -4,8 +4,17 @@ POST http://127.0.0.1:5000/api/questions
 Content-Type: application/json
 
 {
-    "name": "David Rod",
-    "text": "This is a note that i hope works",
+    "name": "Pannini Rod",
+    "text": "This is a sandwich",
     "repo": "repo",
     "live": "live"
 }
+
+### View questions
+GET http://127.0.0.1:5000/api/questions
+Content-Type: application/json
+
+### Edit a question
+
+
+### Delete a question
